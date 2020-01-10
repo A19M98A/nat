@@ -1,0 +1,9 @@
+  از یک روتر که قرار است با اینترنت ارتبات برقرار کند تنظیمات روتر میانی را با دستو رات زیر انجام می دهیم
+
+1.ip nat inside source list TEST interface gigabitEthernet 0/1 overload
+2.ip access-list standard TEST
+3.permit 10.10.10.0 0.0.0.3
+4.int gig0/0
+5.ip nat inside 
+6.interface gigabitEthernet 0/1
+7.ip nat outside 
